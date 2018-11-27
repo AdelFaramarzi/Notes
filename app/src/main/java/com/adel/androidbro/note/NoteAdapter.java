@@ -16,11 +16,11 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder
 
     public NoteAdapter(NoteViewEventCallback eventCallback) {
         this.eventCallback = eventCallback;
-        Note note = new Note();
-        note.setTitle("What is Lorem Ipsum?");
-        note.setDescription("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.");
-        note.setDate(System.currentTimeMillis());
-        notes.add(note);
+//        Note note = new Note();
+//        note.setTitle("What is Lorem Ipsum?");
+//        note.setDescription("tLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy tex ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.");
+//        note.setDate(System.currentTimeMillis());
+//        notes.add(note);
     }
 
     public void addNotes(List<Note> notes){
@@ -69,7 +69,7 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.NoteViewHolder
 
             descriptionTv.setText(note.getDescription());
 
-            dateTv.setText(note.getDate());
+            dateTv.setText(note.getDateStr());
 
             deleteBtn.setOnClickListener(new View.OnClickListener() {
                 @Override

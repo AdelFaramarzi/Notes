@@ -6,7 +6,12 @@ import android.os.Parcelable;
 
 import java.util.Date;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+@Entity(tableName = "notes")
 public class Note implements Parcelable {
+    @PrimaryKey(autoGenerate = true)
     private int id;
     private String title;
     private String description;
@@ -28,10 +33,13 @@ public class Note implements Parcelable {
         this.description = description;
     }
 
-    public String getDate() {
-        return new Date(date).toString();
+    public long getDate() {
+        return date;
     }
 
+    public String getDateStr() {
+        return new Date(date).toString();
+    }
     public void setDate(long date) {
         this.date = date;
     }
