@@ -5,4 +5,4 @@
 <a herf="url"><img src="https://github.com/AdelFaramarzi/Notes/blob/master/Screenshot/Screen3.png" height="500" width="250"></a>
 
 *******************************************
-- **Db = SQLite**
+- **DB SQLite**
